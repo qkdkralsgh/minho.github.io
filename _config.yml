@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Minho's AI page"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Minho Park"
@@ -101,11 +101,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Minho Park"
+  avatar           : ‪C:\Users\qkdkr\Desktop\취업사진\minho1.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "꾸준히 발전하는 개발자가 되자."
+  location         : "Korea"
+  email            : "qkdkralsgh@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
