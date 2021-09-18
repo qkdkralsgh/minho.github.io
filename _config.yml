@@ -102,10 +102,10 @@ analytics:
 # Site Author
 author:
   name             : "Minho Park"
-  avatar           : "‪C:\Users\qkdkr\Desktop\취업사진\minho1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "꾸준히 발전하는 개발자가 되자."
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I'm an AI Researcher & Developer "
   location         : "Korea"
-  email            : "qkdkralsgh@naver.com
+  email            : "qkdkralsgh@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
