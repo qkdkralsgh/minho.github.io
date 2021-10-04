@@ -1,1 +1,1 @@
-# Minho Park's Study Note
+# Minho Park's Study note
