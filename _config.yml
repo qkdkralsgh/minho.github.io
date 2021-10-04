@@ -20,12 +20,12 @@ title                    : "꾸준히 성장하는 개발자"
 title_separator          : "-"
 subtitle                 : "AI Study Note# site tagline that appears below site title in masthead
 name                     : "Minho Park"
-description              : "의 블로그 입니다."
+description              : "민호박의 블로그 입니다."
 url                      : "https://qkdkralsgh.github.io" # the base hostname & protocol for your site e.g.
 baseurl                  : "" # the subpath of your site, e.g.
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "_images/minho1.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/_images/pumpkin.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Minho Park"
-  avatar           : "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/233630893_566677811166710_7794353480641320619_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=TxkoqNQ4IGIAX9ny8U2&edm=ABfd0MgBAAAA&ccb=7-4&oh=856460945f45c89755608bc1904e1f83&oe=614D78C0&_nc_sid=7bff83"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/_images/minho1.jpg"
   bio              : "I'm an AI Researcher & Developer"
   location         : "South Korea"
   email            : "qkdkralsgh@naver.com"
