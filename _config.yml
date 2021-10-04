@@ -104,49 +104,28 @@ author:
   name             : "Minho Park"
   avatar           : "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/233630893_566677811166710_7794353480641320619_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=TxkoqNQ4IGIAX9ny8U2&edm=ABfd0MgBAAAA&ccb=7-4&oh=856460945f45c89755608bc1904e1f83&oe=614D78C0&_nc_sid=7bff83"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I'm an AI Researcher & Developer"
-  location         : "Korea"
+  location         : "South Korea"
   email            : "qkdkralsgh@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+       url: "mailto:qkdkralsgh@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/qkdkralsgh"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+       url: "https://www.instagram.com/minhobbang/?hl=ko"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+       url: "https://github.com/qkdkralsgh"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+       url: "https://www.instagram.com/minhobbang/?hl=ko"
 
 
 # Reading Files
