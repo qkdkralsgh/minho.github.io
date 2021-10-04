@@ -1,1 +1,1 @@
-# qkdkralsgh.github.io
+# Minho Park's Study Note
