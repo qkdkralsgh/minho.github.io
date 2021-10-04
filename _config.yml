@@ -18,14 +18,14 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "꾸준히 성장하는 개발자"
 title_separator          : "-"
-subtitle                 : "AI Study Note" # site tagline that appears below site title in masthead
+subtitle                 : "Minho's AI Study Note" # site tagline that appears below site title in masthead
 name                     : "Minho Park"
 description              : "민호박의 블로그 입니다."
 url                      : "https://qkdkralsgh.github.io" # the base hostname & protocol for your site e.g.
 baseurl                  : "" # the subpath of your site, e.g.
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/_images/pumpkin.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "_images/pumpkin.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Minho Park"
-  avatar           : "/_images/minho1.jpg"
+  avatar           : "_images/minho1.jpg"
   bio              : "I'm an AI Researcher & Developer"
   location         : "South Korea"
   email            : "qkdkralsgh@naver.com"
