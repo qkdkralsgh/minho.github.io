@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "AI Study note"
+title                    : "꾸준히 성장하는 개발자"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "AI Study Note# site tagline that appears below site title in masthead
 name                     : "Minho Park"
-description              : "민호박의 블로그 입니다."
+description              : "의 블로그 입니다."
 url                      : "https://qkdkralsgh.github.io" # the base hostname & protocol for your site e.g.
 baseurl                  : "" # the subpath of your site, e.g.
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
