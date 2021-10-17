@@ -1,30 +1,19 @@
----
-layout: single
-title: "[논문리뷰] Faster R-CNN"
-categories: Deep-leaning
-tag: [Deep-learning, DL]
-toc: true
-author_profile: false
-sidebar:
-    nav: "docs"
----
-
 # Faster R-CNN
 
 ### Intro
 
 - R-CNN에서는 3가지 모듈 (region proposal, classification, bounding box regression)을 각각 따로따로 수행한다.
-    
+  
     **(1)** region proposal 추출 → 각 region proposal별로 CNN 연산 → **(2)** classification, **(3)** bounding box regression
     
 - Fast R-CNN에서는 region proposal을 CNN level로 통과시켜 classification, bounding box regression을 하나로 묶었다.
-    
+  
     **(1)** region proposal 추출 → 전체 image CNN 연산 → RoI projection, RoI Pooling
     
     → **(2)** classification, bounding box regression
     
 - 그러나 여전히 region proposal인 Selective search알고리즘을 **CNN외부에서 연산**하므로 RoI 생성단계가 병목이다.
-    
+  
     따라서 **Faster R-CNN**에서는 **detection에서 쓰인 conv feature을 RPN에서도 공유**해서
     
     **RoI생성역시 CNN level에서 수행**하여 속도를 향상시킨다.
@@ -48,13 +37,13 @@ Faster R-CNN은 Fast R-CNN구조에서 conv feature map과 RoI Pooling사이에 
 
 Region Proposal Network가 추가된 구조이다.
 
-(assets/images/Untitled.png)
+![Untitled](Faster%20R-CNN%203cf0bd1530954f54bd2000aa2373b296/Untitled.png)
 
 그리고 Faster R-CNN에서는 RPN 네트워크에서 사용할 CNN과
 
 Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트워크를 공유하자는 개념에서 나왔다.
 
-(assets/images/Untitled%201.png)
+![Untitled](Faster%20R-CNN%203cf0bd1530954f54bd2000aa2373b296/Untitled%201.png)
 
 결국 위 그림에서와 같이 CNN을 통과하여 생성된 conv feature map이 RPN에 의해 RoI를 생성한다.
 
@@ -64,13 +53,11 @@ Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트�
 
 따라서 original image위에서 생성된 RoI는 아래 그림과 같이 conv feature map의 크기에 맞게 rescaling된다.
 
-(assets/images/Untitled%202.png)
-
-                                                           **feature map에 투영된 RoI**
+![Untitled](Faster%20R-CNN%203cf0bd1530954f54bd2000aa2373b296/Untitled%202.png)                         																**feature map에 투영된 RoI**
 
 이렇게 feature map에 RoI가 투영되고 나면 FC layer에 의해 classification과 bbox regression이 수행된다.
 
-(assets/images/Untitled%203.png)
+![Untitled](Faster%20R-CNN%203cf0bd1530954f54bd2000aa2373b296/Untitled%203.png)
 
 위 그림에서 보다시피 마지막에 FC layer를 사용하기에 input size를 맞춰주기 위해 RoI pooling을 사용한다.
 
