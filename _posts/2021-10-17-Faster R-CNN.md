@@ -45,7 +45,8 @@ Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트�
 (그래서 코드 상에서도 anchor box의 scale은 original image 크기에 맞춰서 (128, 256, 512)와 같이 생성하고 이 anchor box와 network의 output 값 사이의 loss를 optimize하도록 훈련시킨다.)
 따라서 original image위에서 생성된 RoI는 아래 그림과 같이 conv feature map의 크기에 맞게 rescaling된다.
 
-<img src="../assets/images/Faster_R-CNN3.png" alt="Untitled 2" style="zoom:50%;" />	           							
+<img src="../assets/images/Faster_R-CNN3.png" alt="Untitled 2" style="zoom:50%;" />	    
+
 **feature map에 투영된 RoI**
 
 이렇게 feature map에 RoI가 투영되고 나면 FC layer에 의해 classification과 bbox regression이 수행된다.
