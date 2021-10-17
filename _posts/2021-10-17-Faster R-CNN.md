@@ -1,3 +1,14 @@
+---
+layout: single
+title: "[논문리뷰] Faster R-CNN"
+categories: Deep-learning
+tag: [Deep-learning, DL]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # Faster R-CNN
 
 ### Intro
