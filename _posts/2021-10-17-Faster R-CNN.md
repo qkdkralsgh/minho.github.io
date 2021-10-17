@@ -53,7 +53,7 @@ Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트�
 <center><img src="/assets/images/Faster_R-CNN3.png" width="50%" height="50%"></center>
 
     
-<center>**<feature map에 투영된 RoI>**</center>
+<center>**feature map에 투영된 RoI**</center>
 
     
 이렇게 feature map에 RoI가 투영되고 나면 FC layer에 의해 classification과 bbox regression이 수행된다.
