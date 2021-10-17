@@ -70,7 +70,7 @@ Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트�
 
 이렇게 feature map에 RoI가 투영되고 나면 FC layer에 의해 classification과 bbox regression이 수행된다.
 
-![Untitled 3](../assets/images/Untitled 3.png)
+<img src="../assets/images/Untitled 2.png" alt="Untitled 2" style="zoom:100%;" />	
 
 위 그림에서 보다시피 마지막에 FC layer를 사용하기에 input size를 맞춰주기 위해 RoI pooling을 사용한다.
 
