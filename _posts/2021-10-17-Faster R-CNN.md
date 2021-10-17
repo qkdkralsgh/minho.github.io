@@ -32,19 +32,26 @@ Selective search가 느린이유는 cpu에서 돌기 때문이다.
 Faster R-CNN은 한마디로 RPN + Fast R-CNN이라할 수 있다.
 Faster R-CNN은 Fast R-CNN구조에서 conv feature map과 RoI Pooling사이에 RoI를 생성하는
 Region Proposal Network가 추가된 구조이다.
+
 <img src="../assets/images/Faster_R-CNN1.png" style="zoom: 67%;" />
+
 그리고 Faster R-CNN에서는 RPN 네트워크에서 사용할 CNN과
 Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트워크를 공유하자는 개념에서 나왔다.
+
 <img src="../assets/images/Faster_R-CNN2.png" />
+
 결국 위 그림에서와 같이 CNN을 통과하여 생성된 conv feature map이 RPN에 의해 RoI를 생성한다.
 주의해야할 것이 생성된 RoI는 feature map에서의 RoI가 아닌 original image에서의 RoI이다.
 (그래서 코드 상에서도 anchor box의 scale은 original image 크기에 맞춰서 (128, 256, 512)와 같이 생성하고 이 anchor box와 network의 output 값 사이의 loss를 optimize하도록 훈련시킨다.)
 따라서 original image위에서 생성된 RoI는 아래 그림과 같이 conv feature map의 크기에 맞게 rescaling된다.
+
 <img src="../assets/images/Faster_R-CNN3.png" alt="Untitled 2" style="zoom:50%;" />	           							
 **feature map에 투영된 RoI**
 
 이렇게 feature map에 RoI가 투영되고 나면 FC layer에 의해 classification과 bbox regression이 수행된다.
+
 <img src="../assets/images/Faster_R-CNN4.png" alt="Untitled 3" style="zoom:100%;" />	
+
 위 그림에서 보다시피 마지막에 FC layer를 사용하기에 input size를 맞춰주기 위해 RoI pooling을 사용한다.
 RoI pooling을 사용하니까 RoI들의 size가 달라도 되는것처럼 original image의 input size도 달라도된다.
 그러나 구현할때 코드를 보면 original image의 size는 같은 크기로 맞춰주는데 그 이유는
