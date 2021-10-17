@@ -20,6 +20,7 @@ sidebar:
 - 그러나 여전히 region proposal인 Selective search알고리즘을 **CNN외부에서 연산**하므로 RoI 생성단계가 병목이다.
   따라서 **Faster R-CNN**에서는 **detection에서 쓰인 conv feature을 RPN에서도 공유**해서
   **RoI생성역시 CNN level에서 수행**하여 속도를 향상시킨다.
+  
 **Region Proposal도 Selective search 쓰지말고 CNN - (classification | bounding box regression) 이 네트워크 안에서 같이 해보자!"**
 
 ---
