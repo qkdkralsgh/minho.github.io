@@ -48,13 +48,13 @@ Faster R-CNN은 Fast R-CNN구조에서 conv feature map과 RoI Pooling사이에 
 
 Region Proposal Network가 추가된 구조이다.
 
-<img src="../assets/images/Untitled.png" alt="Untitled" style="zoom: 67%;" />
+<img src="../assets/images/Faster_R-CNN1.png" alt="Untitled" style="zoom: 67%;" />
 
 그리고 Faster R-CNN에서는 RPN 네트워크에서 사용할 CNN과
 
 Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트워크를 공유하자는 개념에서 나왔다.
 
-<img src="../assets/images/Untitled 1.png" alt="Untitled 1"  />
+<img src="../assets/images/Faster_R-CNN2.png" alt="Untitled 1"  />
 
 결국 위 그림에서와 같이 CNN을 통과하여 생성된 conv feature map이 RPN에 의해 RoI를 생성한다.
 
@@ -64,13 +64,13 @@ Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트�
 
 따라서 original image위에서 생성된 RoI는 아래 그림과 같이 conv feature map의 크기에 맞게 rescaling된다.
 
-​           <img src="../assets/images/Untitled 2.png" alt="Untitled 2" style="zoom:50%;" />	           							
+​           <img src="../assets/images/Faster_R-CNN3.png" alt="Untitled 2" style="zoom:50%;" />	           							
 
 ​                                  **feature map에 투영된 RoI**
 
 이렇게 feature map에 RoI가 투영되고 나면 FC layer에 의해 classification과 bbox regression이 수행된다.
 
-<img src="../assets/images/Untitled 3.png" alt="Untitled 3" style="zoom:100%;" />	
+<img src="../assets/images/Faster_R-CNN4.png" alt="Untitled 3" style="zoom:100%;" />	
 
 위 그림에서 보다시피 마지막에 FC layer를 사용하기에 input size를 맞춰주기 위해 RoI pooling을 사용한다.
 
