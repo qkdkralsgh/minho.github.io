@@ -21,18 +21,19 @@ sidebar:
   따라서 **Faster R-CNN**에서는 **detection에서 쓰인 conv feature을 RPN에서도 공유**해서
   **RoI생성역시 CNN level에서 수행**하여 속도를 향상시킨다.
   
-**"Region Proposal도 Selective search 쓰지말고 CNN - (classification | bounding box regression) 이 네트워크 안에서 같이 해보자!"**
+  **"Region Proposal도 Selective search 쓰지말고 CNN - (classification | bounding box regression) 이 네트워크 안에서 같이 해보자!"**
+
 
 ---
 
 ### Faster R-CNN
 
-Selective search가 느린이유는 cpu에서 돌기 때문이다.
-따라서 Region proposal 생성하는 네트워크도 gpu에 넣기 위해서 Conv layer에서 생성하도록 하자는게 아이디어이다.
+- Selective search가 느린이유는 cpu에서 돌기 때문이다.
+  따라서 Region proposal 생성하는 네트워크도 gpu에 넣기 위해서 Conv layer에서 생성하도록 하자는게 아이디어이다.
 
-Faster R-CNN은 한마디로 RPN + Fast R-CNN이라할 수 있다.
-Faster R-CNN은 Fast R-CNN구조에서 conv feature map과 RoI Pooling사이에 RoI를 생성하는
-Region Proposal Network가 추가된 구조이다.
+- Faster R-CNN은 한마디로 RPN + Fast R-CNN이라할 수 있다.
+  Faster R-CNN은 Fast R-CNN구조에서 conv feature map과 RoI Pooling사이에 RoI를 생성하는
+  Region Proposal Network가 추가된 구조이다.
 
 <center><img src="/assets/images/Faster_R-CNN1.png" width="50%" height="50%"><center>
 
@@ -52,13 +53,13 @@ Fast R-CNN에서 classification, bbox regression을 위해 사용한 CNN 네트�
 <center><img src="/assets/images/Faster_R-CNN3.png" width="50%" height="50%"><center>
 
     
-<center>**feature map에 투영된 RoI**<center>
+<center>**<feature map에 투영된 RoI>**<center>
 
     
 이렇게 feature map에 RoI가 투영되고 나면 FC layer에 의해 classification과 bbox regression이 수행된다.
 
     
-<center><img src="/assets/images/Faster_R-CNN1.png"><center>
+<center><img src="/assets/images/Faster_R-CNN1.png" width="70%" height="70%"><center>
     
     
 위 그림에서 보다시피 마지막에 FC layer를 사용하기에 input size를 맞춰주기 위해 RoI pooling을 사용한다.
