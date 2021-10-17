@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[논문리뷰] Faster R-CNN"
-categories: 딥러닝 논문리뷰
+categories: 딥러닝-논문리뷰
 tag: [Deep-learning, DL]
 toc: true
 author_profile: false
