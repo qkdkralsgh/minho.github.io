@@ -1,6 +1,17 @@
+---
+layout: single
+title: "[논문리뷰] Faster R-CNN"
+categories: 딥러닝 논문리뷰
+tag: [Deep-learning, DL]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # Faster R-CNN
 
-### <Intro>
+### Intro
 
 - R-CNN에서는 3가지 모듈 (region proposal, classification, bounding box regression)을 각각 따로따로 수행한다.
     
@@ -25,7 +36,7 @@
 
 ---
 
-### <Faster R-CNN>
+### Faster R-CNN
 
 Selective search가 느린이유는 cpu에서 돌기 때문이다.
 
